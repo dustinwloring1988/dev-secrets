@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+  margin-top: 30px;
+}
+
+.error {
+  background: #fee;
+  color: #c00;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.loading {
+  background: #eef;
+  color: #00c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  background: #0052a3;
+}
+
+.create-form {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.create-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.apps-section,
+.secrets-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.app-list,
+.secret-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.app-list li {
+  padding: 10px;
+  border: 1px solid #eee;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.app-list li:hover {
+  background: #f9f9f9;
+}
+
+.app-list li.selected {
+  background: #e6f0ff;
+  border-color: #0066cc;
+}
+
+.secret-list li {
+  padding: 10px;
+  border: 1px solid #eee;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secret-list li button {
+  background: #cc0000;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.secret-list li button:hover {
+  background: #a00000;
+}
