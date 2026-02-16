@@ -3,6 +3,11 @@
 
 # Dev Secrets
 
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org)
+[![Docker](https://img.shields.io/badge/Docker-Supported-2496ed.svg)](https://www.docker.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Local secret management for development. Store API keys, environment variables, and other sensitive configuration data for your projects in a local SQLite database.
 
 ## Features
