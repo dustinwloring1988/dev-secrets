@@ -1,3 +1,6 @@
+
+<img width="1220" height="565" alt="cover" src="https://github.com/user-attachments/assets/688edda9-8f10-446c-aafb-3c6a26e0048d" />
+
 # Dev Secrets
 
 Local secret management for development. Store API keys, environment variables, and other sensitive configuration data for your projects in a local SQLite database.
