@@ -106,6 +106,7 @@ function App() {
       <aside className="sidebar">
         <div className="sidebar-header">
           <h1>Dev Secrets</h1>
+          <p>Environment Variables</p>
           <form className="create-app-form" onSubmit={createApp}>
             <input
               type="text"
@@ -150,7 +151,7 @@ function App() {
         {!selectedApp ? (
           <div className="empty-state">
             <h2>Select an app</h2>
-            <p>Choose an app from the sidebar or create a new one</p>
+            <p>Choose from sidebar or create new</p>
           </div>
         ) : (
           <>
@@ -179,7 +180,7 @@ function App() {
                     <span className="secret-key">{secret.key}</span>
                     <div className="secret-actions">
                       <button
-                        className="copy-btn"
+                        className={`copy-btn ${copiedKey === secret.key ? 'copied' : ''}`}
                         onClick={() => copyToClipboard(secret.value, secret.key)}
                       >
                         {copiedKey === secret.key ? 'Copied!' : 'Copy'}
@@ -200,8 +201,8 @@ function App() {
                 </div>
               ))}
               {secrets.length === 0 && (
-                <div className="empty-state">
-                  <p>No secrets yet. Add one above.</p>
+                <div className="empty-secrets">
+                  <p>No secrets yet // add one above</p>
                 </div>
               )}
             </div>
